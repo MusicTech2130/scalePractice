@@ -1,0 +1,24 @@
+<html>
+<header>
+<script>
+
+function scales(){
+	var letterN = ["A","Af", "B", "Bf", "C", "Df", "D", "E", "Ef", "F", "F#/Gf", "G"];
+	var type = ["maj", "min", "har.min.", "mel.min."];
+	selection = Math.floor((Math.random()*11)+0);
+	selection1 = Math.floor((Math.random()*3)+0);
+	h5Tag = document.getElementById("head");
+	pTag = document.getElementById("words");
+	h5Tag.innerHTML = type[selection1];
+	pTag.innerHTML = letterN[selection];
+	
+}
+</script>
+</head>
+<body>	
+	<h1> Avynne's Scale practice</h1>
+	<h5 id = "head"> Quality of the scale</h5>
+	<p id ="words">Name of the scale</p>
+	<button id="button" onclick="scales()">Random selection!</button>
+</body>
+</html>
